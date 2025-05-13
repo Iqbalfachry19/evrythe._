@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://evrythe.vercel.app
+
+# Sitemaps
+Sitemap: https://evrythe.vercel.app/sitemap.xml

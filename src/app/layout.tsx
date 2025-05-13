@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "evr!t — Official",
     description: "Follow evr!t on Instagram for creative updates.",
-    url: "https://evrit.xyz", // Update with actual domain
+    url: "https://evrythe.vercel.app", // Update with actual domain
     siteName: "evr!t",
     images: [
       {
