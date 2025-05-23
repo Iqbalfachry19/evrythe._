@@ -1,6 +1,13 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { Comic_Neue } from "next/font/google";
+
+const comic = Comic_Neue({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-comic",
+});
 
 const containerVariants: Variants = {
   hidden: {},
@@ -23,22 +30,11 @@ const itemVariants: Variants = {
 export default function About() {
   return (
     <section
-      className="
-    max-w-3xl       /* max width smaller than 4xl for better reading */
-    mx-auto 
-    px-8            /* horizontal padding smaller on large screens */
-    py-16           /* vertical padding remains */
-    sm:px-16        /* on small+ screens, increase horizontal padding */
-    my-16 
-    bg-white 
-    border-[10px] 
-    border-black 
-    rounded-lg 
-    shadow-lg
-  "
-      style={{
-        fontFamily: "'Comic Sans MS', 'Comic Neue', cursive, sans-serif",
-      }}
+      className={`
+        ${comic.className}
+        max-w-3xl mx-auto px-8 py-16 sm:px-16 my-16 
+        bg-white border-[10px] border-black rounded-lg shadow-lg
+      `}
     >
       <motion.div
         initial="hidden"
@@ -60,9 +56,8 @@ export default function About() {
 
         <motion.p
           variants={itemVariants}
-          className="text-black text-xl leading-relaxed mb-16 relative"
+          className="text-black text-xl leading-relaxed mb-16 relative font-black"
           style={{
-            fontWeight: "900",
             lineHeight: 1.6,
             textShadow: "1px 1px 0 white",
           }}
@@ -112,7 +107,7 @@ export default function About() {
 
         <motion.div
           variants={itemVariants}
-          className="text-center max-w-2xl mx-auto mt-24 sm:mt-32"
+          className="text-center max-w-2xl mx-auto mt-15 sm:mt-32"
         >
           <h3
             className="inline-flex items-center gap-3 text-4xl font-extrabold text-black tracking-widest select-none"
@@ -122,14 +117,13 @@ export default function About() {
               WebkitTextStroke: "1.3px black",
             }}
           >
-            <SparklesIcon className="w-9 h-9 stroke-2  stroke-black" />
+            <SparklesIcon className="w-9 h-9 stroke-2 stroke-black" />
             ABOUT EVR!T
           </h3>
 
           <p
             className="mt-8 text-black text-lg leading-relaxed font-extrabold"
             style={{
-              fontFamily: "'Comic Sans MS', 'Comic Neue', cursive, sans-serif",
               textShadow: "1px 1px 0 white",
             }}
           >
