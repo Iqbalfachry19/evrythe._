@@ -10,7 +10,7 @@ export default function Newsletter() {
       viewport={{ once: true }}
       className="py-20 px-4 bg-black text-white text-center"
     >
-      <h2 className="text-4xl font-bold mb-6">Join Our Newsletter</h2>
+      <h2 className="text-4xl font-bold mb-6">Join My Newsletter</h2>
       <p className="mb-6 text-lg text-gray-300">
         Stay in the loop with exclusive updates and stories.
       </p>

@@ -1,12 +1,12 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import { Comic_Neue } from "next/font/google";
+import { Zen_Dots } from "next/font/google";
 
-const comic = Comic_Neue({
+const zenDots = Zen_Dots({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-comic",
+  weight: "400",
+  variable: "--font-zen-dots",
 });
 
 const containerVariants: Variants = {
@@ -31,7 +31,7 @@ export default function About() {
   return (
     <section
       className={`
-        ${comic.className}
+        ${zenDots.className}
         max-w-3xl mx-auto px-8 py-16 sm:px-16 my-16 
         bg-white border-[10px] border-black rounded-lg shadow-lg
       `}
@@ -51,7 +51,7 @@ export default function About() {
               "2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, -2px -2px 0 #fff, 0 0 6px black",
           }}
         >
-          OUR MISSION
+          MY MISSION
         </motion.h2>
 
         <motion.p

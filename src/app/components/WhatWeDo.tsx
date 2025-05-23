@@ -51,7 +51,7 @@ export default function WhatWeDoSection() {
     >
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold mb-10 tracking-tight">
-          What We Do
+          What I Do
         </h2>
         <ul className="grid md:grid-cols-3 gap-10">
           {services.map(({ title, desc, icon: Icon, color, bgColor }, idx) => (
