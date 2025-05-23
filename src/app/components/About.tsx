@@ -64,8 +64,8 @@ export default function About() {
         >
           At{" "}
           <strong
+            className="text-pink-500"
             style={{
-              color: "#E11D48",
               textShadow: "1px 1px 0 black",
               WebkitTextStroke: "0.7px black",
             }}
@@ -74,8 +74,8 @@ export default function About() {
           </strong>
           , we bridge{" "}
           <em
+            className="text-pink-500"
             style={{
-              color: "#E11D48",
               textShadow: "1px 1px 0 black",
               WebkitTextStroke: "0.5px black",
             }}
@@ -84,8 +84,8 @@ export default function About() {
           </em>{" "}
           and{" "}
           <em
+            className="text-pink-500"
             style={{
-              color: "#E11D48",
               textShadow: "1px 1px 0 black",
               WebkitTextStroke: "0.5px black",
             }}
@@ -94,8 +94,8 @@ export default function About() {
           </em>
           , delivering{" "}
           <strong
+            className="text-pink-600"
             style={{
-              color: "#B91C1C",
               textShadow: "1px 1px 0 black",
               WebkitTextStroke: "0.7px black",
             }}
@@ -132,9 +132,8 @@ export default function About() {
             <br />
             From fashion to visual storytelling,{" "}
             <em
+              className="underline text-pink-500"
               style={{
-                textDecoration: "underline",
-                color: "#E11D48",
                 WebkitTextStroke: "0.5px black",
                 textShadow: "1px 1px 0 black",
               }}
