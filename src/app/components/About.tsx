@@ -44,7 +44,7 @@ export default function About() {
       >
         <motion.h2
           variants={itemVariants}
-          className="text-5xl font-extrabold text-black mb-8 border-b-[6px] border-black pb-3 select-none"
+          className="text-3xl sm:text-5xl font-extrabold text-black mb-8 border-b-[6px] border-black pb-3 select-none"
           style={{
             letterSpacing: "0.15em",
             textShadow:
