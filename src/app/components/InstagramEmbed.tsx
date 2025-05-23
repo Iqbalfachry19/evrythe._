@@ -7,7 +7,7 @@ export default function InstagramEmbed() {
 
       <div className="bg-gradient-to-tr from-pink-400 via-red-400 to-yellow-400 p-1 rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
         <div className="bg-white rounded-lg overflow-hidden">
-          <div className="relative w-full aspect-[320/440]">
+          <div className="relative w-full aspect-[9/12] sm:aspect-[4/5] min-h-[500px]">
             <iframe
               src="https://www.instagram.com/evrythe._/embed"
               className="absolute top-0 left-0 w-full h-full border-0"
