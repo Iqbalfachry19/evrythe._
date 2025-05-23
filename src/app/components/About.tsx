@@ -1,12 +1,12 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import { Zen_Dots } from "next/font/google";
+import { Orbitron } from "next/font/google";
 
-const zenDots = Zen_Dots({
+const orbitron = Orbitron({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-zen-dots",
+  weight: ["400", "700", "900"],
+  variable: "--font-orbitron",
 });
 
 const containerVariants: Variants = {
@@ -31,7 +31,7 @@ export default function About() {
   return (
     <section
       className={`
-        ${zenDots.className}
+        ${orbitron.className}
         max-w-3xl mx-auto px-8 py-16 sm:px-16 my-16 
         bg-white border-[10px] border-black rounded-lg shadow-lg
       `}
