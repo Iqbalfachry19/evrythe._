@@ -1,6 +1,6 @@
 export default function InstagramEmbed() {
   return (
-    <section className="my-16 px-4 max-w-md mx-auto">
+    <section className="my-16 px-4 bg-white rounded-2xl py-2  shadow-lg  max-w-3xl mx-auto">
       <h2 className="text-2xl font-extrabold mb-6 text-center text-gray-900">
         Check Our Latest Instagram Post
       </h2>

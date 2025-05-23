@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { HiLightBulb, HiChartBar, HiVideoCamera } from "react-icons/hi";
 
