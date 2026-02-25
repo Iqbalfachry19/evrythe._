@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative flex h-screen items-center justify-center overflow-hidden bg-indigo-950 text-indigo-50">
+    <section className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden bg-indigo-950 text-indigo-50">
       <div
         className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-25"
         aria-hidden="true"

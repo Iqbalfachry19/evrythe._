@@ -49,7 +49,7 @@ export default async function Home() {
 
   return (
     <main
-      className="m-4 rounded-[24px] border-[10px] border-indigo-950 p-6 text-indigo-950 shadow-[10px_10px_0_0_rgba(30,27,75,0.92)]"
+      className="m-2 sm:m-4 rounded-[16px] sm:rounded-[24px] border-[4px] sm:border-[10px] border-indigo-950 p-3 sm:p-6 text-indigo-950 shadow-[4px_4px_0_0_rgba(30,27,75,0.92)] sm:shadow-[10px_10px_0_0_rgba(30,27,75,0.92)]"
       style={{
         backgroundColor: "#e0e7ff",
         backgroundImage:

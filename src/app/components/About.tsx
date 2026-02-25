@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="mx-auto my-16 max-w-4xl rounded-[28px] border border-indigo-900 bg-indigo-50/95 px-8 py-12 shadow-[10px_10px_0_0_rgba(30,27,75,0.9)] sm:px-12">
+    <section className="mx-auto my-12 sm:my-16 max-w-4xl rounded-[24px] sm:rounded-[28px] border border-indigo-900 bg-indigo-50/95 px-5 py-8 sm:px-12 sm:py-12 shadow-[6px_6px_0_0_rgba(30,27,75,0.9)] sm:shadow-[10px_10px_0_0_rgba(30,27,75,0.9)]">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}

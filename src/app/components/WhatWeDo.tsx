@@ -47,7 +47,7 @@ export default function WhatWeDoSection() {
       whileInView="visible"
       viewport={{ once: true }}
       variants={containerVariants}
-      className="bg-gradient-to-br from-indigo-50 via-indigo-100/40 to-white px-4 py-20"
+      className="bg-gradient-to-br from-indigo-50 via-indigo-100/40 to-white px-4 py-12 sm:py-20"
     >
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="mb-10 text-4xl font-bold tracking-tight text-indigo-950">
@@ -62,7 +62,7 @@ export default function WhatWeDoSection() {
                 scale: 1.05,
                 boxShadow: "0 10px 28px rgba(79, 70, 229, 0.28)",
               }}
-              className="cursor-pointer rounded-3xl border border-indigo-300 bg-white p-8 shadow-[6px_6px_0_0_rgba(30,27,75,0.85)] transition-all duration-300 hover:-translate-y-1"
+              className="cursor-pointer rounded-3xl border border-indigo-300 bg-white p-6 sm:p-8 shadow-[6px_6px_0_0_rgba(30,27,75,0.85)] transition-all duration-300 hover:-translate-y-1"
             >
               <div
                 className={`inline-flex items-center justify-center w-14 h-14 mb-6 rounded-full ${bgColor}`}

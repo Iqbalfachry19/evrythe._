@@ -633,8 +633,8 @@ export default function NovelStore() {
   }
 
   return (
-    <section className="my-16 rounded-3xl border border-indigo-900 bg-gradient-to-br from-indigo-50 via-white to-indigo-100/70 p-6 shadow-[8px_8px_0_0_rgba(30,27,75,0.95)]">
-      <div className="mb-6 rounded-xl bg-gradient-to-r from-indigo-950 via-indigo-900 to-indigo-800 p-5 text-white shadow-lg">
+    <section className="my-12 sm:my-16 rounded-[24px] sm:rounded-3xl border border-indigo-900 bg-gradient-to-br from-indigo-50 via-white to-indigo-100/70 p-4 sm:p-6 shadow-[6px_6px_0_0_rgba(30,27,75,0.95)] sm:shadow-[8px_8px_0_0_rgba(30,27,75,0.95)]">
+      <div className="mb-6 rounded-xl bg-gradient-to-r from-indigo-950 via-indigo-900 to-indigo-800 p-4 sm:p-5 text-white shadow-lg">
         <div className="flex items-center justify-between gap-3">
           <h2 className="text-3xl font-black tracking-tight">Novel Store</h2>
           <div className="rounded-full bg-[#a5b4fc] px-3 py-1 text-xs font-bold text-[#1e1b4b]">
@@ -646,7 +646,7 @@ export default function NovelStore() {
         </p>
       </div>
 
-      <div className="mb-6 rounded-2xl border border-[#c7d2fe] bg-[#eef2ff] p-5">
+      <div className="mb-6 rounded-2xl border border-[#c7d2fe] bg-[#eef2ff] p-4 sm:p-5">
         {user ? (
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div>
