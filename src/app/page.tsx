@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import InstagramEmbed from "./components/InstagramEmbed";
 import NovelStore from "./components/NovelStore";
-import WhatWeDoSection from "./components/WhatWeDo";
 import { getNovels } from "@/lib/novels-store";
 import { getReviewStatsByBook } from "@/lib/reviews";
 
@@ -59,8 +58,6 @@ export default async function Home() {
       <Hero />
 
       <About />
-
-      <WhatWeDoSection />
 
       <NovelStore />
 

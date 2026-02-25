@@ -26,6 +26,12 @@ export default function About() {
           Fokus utamanya adalah ekspresi karakter, komposisi kuat, dan tone warna
           yang memberi kesan cinematic di setiap unggahan.
         </p>
+        <p className="mt-4 text-lg leading-relaxed text-indigo-800">
+          Lebih dari sekadar visual, EVR!T juga menjadi wadah untuk karya tulis
+          original. Dari proses ideasi dan worldbuilding hingga rilis novel siap
+          baca, narasi ini dihidupkan lewat konten storytelling—membangun
+          koneksi yang lebih erat dan personal dengan audiens @evrythe._.
+        </p>
       </motion.div>
     </section>
   );
