@@ -1,14 +1,6 @@
 {
   "users": [
     {
-      "id": "user_4dcd2e0ed5a80e75",
-      "name": "iqbal",
-      "email": "iqbal.fachry19@gmail.com",
-      "salt": "7434193d5a0f50b7bb61d9913d0447c8",
-      "passwordHash": "cc1b84a97f43e2fe2e514ba539ab1b6470d2b658d6a2cd5cae07ea1b7a7d5fd1c67e0e7d01ed4f516fac9b5710a9d10ceee4bf5e20531996bf4e4be9fa0d2ee6",
-      "createdAt": "2026-02-24T08:20:52.796Z"
-    },
-    {
       "id": "user_48f1b05a104fd84e",
       "name": "evrythe",
       "email": "evrythe@gmail.com",
