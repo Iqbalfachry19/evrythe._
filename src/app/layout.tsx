@@ -24,20 +24,8 @@ export const metadata: Metadata = {
     description: "Follow evr!t on Instagram for creative updates.",
     url: "https://evrythe.vercel.app", // Update with actual domain
     siteName: "evr!t",
-    images: [
-      {
-        url: "/og-image.jpg", // Add this image
-        width: 800,
-        height: 600,
-        alt: "evr!t Instagram",
-      },
-    ],
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@evrit",
   },
 };
 
