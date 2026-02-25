@@ -1,0 +1,83 @@
+export type Novel = {
+  id: string;
+  title: string;
+  author: string;
+  description: string;
+  priceUsd: number;
+  priceIdr: number;
+  coverImage: string;
+  ebookDriveUrl: string;
+};
+
+export const NOVELS: Novel[] = [
+  {
+    id: "midnight-library",
+    title: "The Midnight Library",
+    author: "All by EVR!T",
+    description:
+      "Novel reflektif tentang pilihan hidup, penyesalan, dan kesempatan kedua.",
+    priceUsd: 12.99,
+    priceIdr: 199000,
+    coverImage: "/books/midnight-library.svg",
+    ebookDriveUrl: "https://drive.google.com/file/d/1MIDNIGHT_SAMPLE/view",
+  },
+  {
+    id: "atomic-habits-story",
+    title: "Atomic Habits Story Edition",
+    author: "All by EVR!T",
+    description:
+      "Fiksi pengembangan diri dengan alur ringan untuk membangun kebiasaan baik.",
+    priceUsd: 10.5,
+    priceIdr: 159000,
+    coverImage: "/books/atomic-habits-story.svg",
+    ebookDriveUrl: "https://drive.google.com/file/d/1ATOMIC_SAMPLE/view",
+  },
+  {
+    id: "sea-of-tranquility",
+    title: "Sea of Tranquility",
+    author: "All by EVR!T",
+    description:
+      "Kisah lintas waktu tentang pandemi, seni, dan makna keterhubungan.",
+    priceUsd: 14.75,
+    priceIdr: 225000,
+    coverImage: "/books/sea-of-tranquility.svg",
+    ebookDriveUrl: "https://drive.google.com/file/d/1SEA_SAMPLE/view",
+  },
+  {
+    id: "neon-rain-letters",
+    title: "Neon Rain Letters",
+    author: "All by EVR!T",
+    description:
+      "Kumpulan surat dan fragmen malam tentang cinta, kehilangan, dan harapan baru.",
+    priceUsd: 11.9,
+    priceIdr: 179000,
+    coverImage: "/books/neon-rain-letters.svg",
+    ebookDriveUrl: "https://drive.google.com/file/d/1NEON_SAMPLE/view",
+  },
+  {
+    id: "afterglow-in-jakarta",
+    title: "Afterglow in Jakarta",
+    author: "All by EVR!T",
+    description:
+      "Novel urban romance dengan ritme kota, nostalgia, dan perjalanan menemukan diri.",
+    priceUsd: 13.4,
+    priceIdr: 205000,
+    coverImage: "/books/afterglow-in-jakarta.svg",
+    ebookDriveUrl: "https://drive.google.com/file/d/1AFTERGLOW_SAMPLE/view",
+  },
+  {
+    id: "velvet-frequency",
+    title: "Velvet Frequency",
+    author: "All by EVR!T",
+    description:
+      "Cerita coming-of-age bernuansa musik tentang keberanian bersuara di tengah tekanan.",
+    priceUsd: 12.6,
+    priceIdr: 192000,
+    coverImage: "/books/velvet-frequency.svg",
+    ebookDriveUrl: "https://drive.google.com/file/d/1VELVET_SAMPLE/view",
+  },
+];
+
+export function findNovelById(bookId: string) {
+  return NOVELS.find((book) => book.id === bookId);
+}

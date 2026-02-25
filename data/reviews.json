@@ -1,0 +1,37 @@
+{
+  "reviews": [
+    {
+      "id": "rev_1771944347339_78fg4c",
+      "orderId": "ord_1771943965384_6k48hs",
+      "userId": "user_48f1b05a104fd84e",
+      "userName": "evrythe",
+      "bookId": "atomic-habits-story",
+      "rating": 5,
+      "comment": "ok",
+      "createdAt": "2026-02-24T14:45:47.339Z",
+      "updatedAt": "2026-02-24T14:45:47.339Z"
+    },
+    {
+      "id": "rev_1771939931013_ixllcl",
+      "orderId": "ord_1771939445020_gfwpyu",
+      "userId": "user_48f1b05a104fd84e",
+      "userName": "evrythe",
+      "bookId": "sea-of-tranquility",
+      "rating": 4,
+      "comment": "ok",
+      "createdAt": "2026-02-24T13:32:11.012Z",
+      "updatedAt": "2026-02-24T13:32:11.012Z"
+    },
+    {
+      "id": "rev_1771938228335_mjm20a",
+      "orderId": "ord_1771936328498_nrrrq6",
+      "userId": "user_48f1b05a104fd84e",
+      "userName": "evrythe",
+      "bookId": "sea-of-tranquility",
+      "rating": 5,
+      "comment": "bagus",
+      "createdAt": "2026-02-24T13:03:48.335Z",
+      "updatedAt": "2026-02-24T13:03:48.335Z"
+    }
+  ]
+}

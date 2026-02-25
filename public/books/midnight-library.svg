@@ -1,0 +1,16 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bg)"/>
+  <circle cx="610" cy="220" r="120" fill="#fde68a" opacity="0.92"/>
+  <rect x="110" y="820" width="580" height="220" rx="18" fill="#0b1022" opacity="0.82"/>
+  <text x="140" y="905" font-size="66" font-family="Georgia, serif" fill="#f8fafc" font-weight="700">THE</text>
+  <text x="140" y="975" font-size="66" font-family="Georgia, serif" fill="#f8fafc" font-weight="700">MIDNIGHT</text>
+  <text x="140" y="1045" font-size="66" font-family="Georgia, serif" fill="#f8fafc" font-weight="700">LIBRARY</text>
+  <text x="140" y="1110" font-size="32" font-family="Arial, sans-serif" fill="#cbd5e1">EVR!T Author Edition</text>
+  <path d="M150 690h500M150 735h500M150 780h500" stroke="#a78bfa" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+</svg>

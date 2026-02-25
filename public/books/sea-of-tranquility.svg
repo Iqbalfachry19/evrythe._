@@ -1,0 +1,16 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bg)"/>
+  <path d="M0 760c80-30 150-45 235-45 100 0 195 36 295 36 88 0 164-25 270-57v506H0V760z" fill="#0ea5e9" opacity="0.28"/>
+  <path d="M0 840c90-23 165-40 260-40 115 0 195 30 300 30 85 0 158-20 240-43v413H0V840z" fill="#67e8f9" opacity="0.28"/>
+  <circle cx="610" cy="220" r="92" fill="#e0f2fe" opacity="0.9"/>
+  <rect x="84" y="790" width="632" height="265" rx="22" fill="#06243a" opacity="0.88"/>
+  <text x="118" y="885" font-size="60" font-family="Trebuchet MS, sans-serif" fill="#e0f2fe" font-weight="700">SEA OF</text>
+  <text x="118" y="960" font-size="60" font-family="Trebuchet MS, sans-serif" fill="#e0f2fe" font-weight="700">TRANQUILITY</text>
+  <text x="118" y="1040" font-size="30" font-family="Arial, sans-serif" fill="#bae6fd">EVR!T Author Edition</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bg)"/>
+  <path d="M0 700C130 660 260 640 400 640C540 640 670 660 800 700V1200H0V700Z" fill="#818cf8" opacity="0.25"/>
+  <path d="M80 250L720 950" stroke="#c7d2fe" stroke-width="10" stroke-linecap="round" opacity="0.22"/>
+  <rect x="90" y="780" width="620" height="280" rx="20" fill="#0f1233" opacity="0.88"/>
+  <text x="130" y="875" font-size="62" font-family="Georgia, serif" fill="#eef2ff" font-weight="700">NEON RAIN</text>
+  <text x="130" y="950" font-size="62" font-family="Georgia, serif" fill="#eef2ff" font-weight="700">LETTERS</text>
+  <text x="130" y="1035" font-size="30" font-family="Arial, sans-serif" fill="#c7d2fe">EVR!T Author Edition</text>
+</svg>

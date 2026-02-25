@@ -1,0 +1,16 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f1a5b"/>
+      <stop offset="100%" stop-color="#3730a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bg)"/>
+  <path d="M0 460C120 420 250 380 400 380C550 380 680 420 800 460" stroke="#a5b4fc" stroke-width="12" opacity="0.55"/>
+  <path d="M0 540C120 500 250 460 400 460C550 460 680 500 800 540" stroke="#c7d2fe" stroke-width="12" opacity="0.45"/>
+  <path d="M0 620C120 580 250 540 400 540C550 540 680 580 800 620" stroke="#e0e7ff" stroke-width="12" opacity="0.4"/>
+  <rect x="90" y="790" width="620" height="270" rx="22" fill="#11153d" opacity="0.9"/>
+  <text x="126" y="880" font-size="60" font-family="Verdana, sans-serif" fill="#eef2ff" font-weight="700">VELVET</text>
+  <text x="126" y="955" font-size="60" font-family="Verdana, sans-serif" fill="#eef2ff" font-weight="700">FREQUENCY</text>
+  <text x="126" y="1038" font-size="30" font-family="Arial, sans-serif" fill="#c7d2fe">EVR!T Author Edition</text>
+</svg>

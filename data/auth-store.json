@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "user_4dcd2e0ed5a80e75",
+      "name": "iqbal",
+      "email": "iqbal.fachry19@gmail.com",
+      "salt": "7434193d5a0f50b7bb61d9913d0447c8",
+      "passwordHash": "cc1b84a97f43e2fe2e514ba539ab1b6470d2b658d6a2cd5cae07ea1b7a7d5fd1c67e0e7d01ed4f516fac9b5710a9d10ceee4bf5e20531996bf4e4be9fa0d2ee6",
+      "createdAt": "2026-02-24T08:20:52.796Z"
+    },
+    {
+      "id": "user_48f1b05a104fd84e",
+      "name": "evrythe",
+      "email": "evrythe@gmail.com",
+      "salt": "063c7f6cb6be77257435ca1c861bafac",
+      "passwordHash": "b40b4e58fd6c0480c26a1dab7c3c4d84b9a0150e7a96084b363703482be8eee0ef69fcadf340d77b48880692cf0541c4c4eb7e2b07d2806fd355f7c1b002684e",
+      "createdAt": "2026-02-24T08:30:59.346Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "48af1a36d8eb6e176037c2aa32af9d7b16158b25b974056ea9edeee93cfe31de",
+      "userId": "user_48f1b05a104fd84e",
+      "expiresAt": 1772540357230
+    },
+    {
+      "token": "6e0847d676ded4e70ab1848e665fa95fb5e66a4c184837a3550c9c5f4571e295",
+      "userId": "user_48f1b05a104fd84e",
+      "expiresAt": 1772549203245
+    }
+  ]
+}

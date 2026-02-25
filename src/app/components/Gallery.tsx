@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const images = [
   "/gallery/1.jpg",
   "/gallery/2.jpg",
@@ -11,10 +13,12 @@ export default function Gallery() {
       <h2 className="text-2xl font-bold mb-6 text-center">Gallery</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((src, idx) => (
-          <img
+          <Image
             key={idx}
             src={src}
             alt={`evr!t post ${idx + 1}`}
+            width={800}
+            height={800}
             className="w-full h-auto rounded-md object-cover"
           />
         ))}

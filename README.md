@@ -2,35 +2,126 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Novel Store Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Fitur utama:
+- Login/Register/Logout (cookie HttpOnly session)
+- Checkout novel via PayPal atau Midtrans
+- Riwayat order user login
 
-## Learn More
+## API Endpoints
 
-To learn more about Next.js, take a look at the following resources:
+Auth:
+- `POST /api/auth/register`
+- `POST /api/auth/login`
+- `GET /api/auth/me`
+- `POST /api/auth/logout`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Orders:
+- `GET /api/orders`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Checkout:
+- `POST /api/checkout/paypal`
+- `GET /api/checkout/paypal/capture`
+- `POST /api/checkout/midtrans`
+- `GET /api/checkout/midtrans/finish`
+- `POST /api/checkout/paypal-cart`
+- `POST /api/checkout/midtrans-cart`
 
-## Deploy on Vercel
+Webhooks:
+- `POST /api/webhooks/paypal`
+- `POST /api/webhooks/midtrans`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Buat `.env.local`:
+
+```bash
+PAYPAL_BASE_URL=https://api-m.sandbox.paypal.com
+PAYPAL_CLIENT_ID=your_paypal_client_id
+PAYPAL_CLIENT_SECRET=your_paypal_client_secret
+PAYPAL_WEBHOOK_ID=your_paypal_webhook_id
+
+MIDTRANS_SERVER_KEY=your_midtrans_server_key
+
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+```
+
+Catatan:
+- Midtrans endpoint saat ini dipaksa ke Snap Sandbox.
+- Store user/order saat ini in-memory (reset saat server restart), cocok untuk development/demo.
+- Return URL PayPal sekarang diarahkan ke endpoint capture (`/api/checkout/paypal/capture`) agar status order bisa berubah ke `paid` segera setelah user selesai bayar.
+- UI cart menyimpan item di `localStorage` browser (`evrit_cart_v1`) agar cart tetap ada saat reload.
+
+## Webhook Test Dengan Ngrok
+
+1. Jalankan app lokal:
+
+```bash
+npm run dev
+```
+
+2. Jalankan tunnel ngrok ke port app kamu (contoh `3001`):
+
+```bash
+ngrok http 3001
+```
+
+3. Simpan URL ngrok, contoh:
+
+```text
+https://abc123.ngrok-free.app
+```
+
+4. Daftarkan webhook URL:
+- PayPal webhook URL: `https://abc123.ngrok-free.app/api/webhooks/paypal`
+- Midtrans payment notification URL: `https://abc123.ngrok-free.app/api/webhooks/midtrans`
+
+### Uji PayPal (Sandbox)
+
+1. Di PayPal Developer Dashboard, buat webhook ke URL:
+`https://abc123.ngrok-free.app/api/webhooks/paypal`
+2. Subscribe minimal event:
+- `CHECKOUT.ORDER.APPROVED`
+- `PAYMENT.CAPTURE.COMPLETED`
+- `PAYMENT.CAPTURE.DENIED`
+3. Simpan `Webhook ID` ke `.env.local` sebagai `PAYPAL_WEBHOOK_ID`.
+4. Gunakan fitur **Send Test Webhook** dari dashboard untuk kirim event.
+5. Cek status order di UI riwayat order.
+
+### Uji Midtrans (Sandbox)
+
+Midtrans mengirim callback dengan signature SHA512:
+`sha512(order_id + status_code + gross_amount + server_key)`.
+
+Contoh uji manual via `curl`:
+
+```bash
+ORDER_ID="NOVEL-TEST-001"
+STATUS_CODE="200"
+GROSS_AMOUNT="199000.00"
+SERVER_KEY="SB-Mid-server-xxx"
+SIGNATURE=$(node -e "const c=require('crypto');const [o,s,g,k]=process.argv.slice(1);process.stdout.write(c.createHash('sha512').update(o+s+g+k).digest('hex'))" "$ORDER_ID" "$STATUS_CODE" "$GROSS_AMOUNT" "$SERVER_KEY")
+
+curl -X POST "https://abc123.ngrok-free.app/api/webhooks/midtrans" \
+  -H "Content-Type: application/json" \
+  -d "{
+    \"order_id\":\"$ORDER_ID\",
+    \"status_code\":\"$STATUS_CODE\",
+    \"gross_amount\":\"$GROSS_AMOUNT\",
+    \"signature_key\":\"$SIGNATURE\",
+    \"transaction_status\":\"settlement\",
+    \"fraud_status\":\"accept\"
+  }"
+```
+
+Catatan penting test:
+- `order_id` webhook harus sama dengan `paymentReference` order yang dibuat saat checkout, supaya status bisa ter-update.

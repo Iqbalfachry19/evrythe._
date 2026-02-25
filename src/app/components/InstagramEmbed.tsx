@@ -1,12 +1,15 @@
 export default function InstagramEmbed() {
   return (
-    <section className="my-16 px-4 bg-white rounded-2xl py-2 shadow-lg max-w-3xl mx-auto">
-      <h2 className="text-2xl font-extrabold mb-6 text-center text-gray-900">
-        Check My Latest Instagram Post
+    <section className="mx-auto my-16 max-w-4xl rounded-[30px] border border-indigo-900 bg-indigo-50 px-5 py-6 shadow-[8px_8px_0_0_rgba(30,27,75,0.92)]">
+      <p className="text-center text-xs font-bold tracking-[0.35em] text-indigo-700">
+        AUTHOR FEED
+      </p>
+      <h2 className="mb-6 mt-2 text-center text-2xl font-bold text-indigo-950">
+        Style Snapshot From @evrythe._
       </h2>
 
-      <div className="bg-gradient-to-tr from-pink-400 via-red-400 to-yellow-400 p-1 rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-        <div className="bg-white rounded-lg overflow-hidden">
+      <div className="rounded-2xl bg-gradient-to-tr from-indigo-700 via-indigo-500 to-indigo-300 p-[6px] shadow-lg transition-transform duration-300 ease-in-out hover:scale-[1.01]">
+        <div className="overflow-hidden rounded-xl bg-white">
           <div className="relative w-full aspect-[9/12] sm:aspect-[4/5] min-h-[500px]">
             <iframe
               src="https://www.instagram.com/evrythe._/embed"
@@ -23,9 +26,9 @@ export default function InstagramEmbed() {
         href="https://www.instagram.com/evrythe._/"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 block text-center text-pink-600 font-semibold hover:text-pink-800 transition"
+        className="mt-6 block text-center font-semibold text-indigo-700 transition hover:text-indigo-950"
       >
-        Follow us on Instagram
+        Explore full profile
       </a>
     </section>
   );
